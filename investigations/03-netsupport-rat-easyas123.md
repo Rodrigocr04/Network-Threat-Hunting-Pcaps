@@ -130,23 +130,11 @@ tshark -r /path/to/2026-02-28-traffic-analysis-exercise.pcap \
 ## 5. Threat Behavior & Incident Summary
 
 | Element | Incident Detail |
-| --- | --- |
-| **Malware Family** | **NetSupport Manager RAT** (Remote Access Trojan leveraging modified commercial administration software).
-
- |
-| **C2 Infrastructure** | `45.131.214.85` (HTTP / port 443 / port 80).
-
- |
-| **Beacon / Activity Signature** | Periodic HTTP `POST` requests to `/fakeurl.htm` containing agent telemetry headers and operational check-ins.
-
- |
-| **Compromised Host** | `DESKTOP-TEYQ2NR` (IP: `10.2.28.88` / MAC: `00:19:d1:b2:4d:ad`).
-
- |
-| **Compromised User** | Becka Rolf (Account: `brolf`).
-
- |
-| **Affected Domain** | `EASYAS123.TECH` (`EASYAS123`).
-
- |
-| **Operational Impact** | Full endpoint compromise enabling arbitrary command execution, screen capturing, file manipulation, and covert remote control.
+| :--- | :--- |
+| **Malware Family** | **NetSupport Manager RAT** (Remote Access Trojan leveraging modified commercial administration software). |
+| **C2 Infrastructure** | `45.131.214.85` (HTTP / port 443 / port 80). |
+| **Beacon / Activity Signature** | Periodic HTTP `POST` requests to `/fakeurl.htm` containing agent telemetry headers and operational check-ins. |
+| **Compromised Host** | `DESKTOP-TEYQ2NR` (IP: `10.2.28.88` / MAC: `00:19:d1:b2:4d:ad`). |
+| **Compromised User** | Becka Rolf (Account: `brolf`). |
+| **Affected Domain** | `EASYAS123.TECH` (`EASYAS123`). |
+| **Operational Impact** | Full endpoint compromise enabling arbitrary command execution, screen capturing, file manipulation, and covert remote control. |

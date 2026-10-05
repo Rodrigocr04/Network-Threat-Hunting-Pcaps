@@ -169,23 +169,11 @@ _path=="http" | id.orig_h == 10.11.26.183 | cut id.resp_h, host, method, uri, st
 ## 5. Threat Behavior & Incident Summary
 
 | Element | Incident Detail |
-| --- | --- |
-| **Initial Access Vector** | Drive-by delivery via fake cracked application lure (`modandcrackedapk[.]com`) associated with the ZPHP/FakeUpdates campaign.
-
- |
-| **Malware Family** | **NetSupport RAT** (commercial remote administration client abused as a backdoor).
-
- |
-| **C2 Protocol & Port** | Unencrypted HTTP `POST` traffic over TCP port 443 targeting `/fakeurl.htm` at `194.180.191[.]64`.
-
- |
-| **Telemetry Profiling** | Public IP and geographic discovery via `geo.netsupportsoftware[.]com/location/loca.asp`.
-
- |
-| **Compromised Host** | `DESKTOP-B8TQK49` (IP: `10.11.26.183` / MAC: `d0:57:7b:ce:fc:8b`).
-
- |
-| **Compromised User** | `oboomwald` (`nemotodes.health`).
-
- |
-| **Operational Impact** | Unauthorized remote interactive control, screen viewing, keystroke logging, and potential lateral movement across the enterprise network.
+| :--- | :--- |
+| **Initial Access Vector** | Drive-by delivery via fake cracked application lure (`modandcrackedapk[.]com`) associated with the ZPHP/FakeUpdates campaign. |
+| **Malware Family** | **NetSupport RAT** (commercial remote administration client abused as a backdoor). |
+| **C2 Protocol & Port** | Unencrypted HTTP `POST` traffic over TCP port 443 targeting `/fakeurl.htm` at `194.180.191[.]64`. |
+| **Telemetry Profiling** | Public IP and geographic discovery via `geo.netsupportsoftware[.]com/location/loca.asp`. |
+| **Compromised Host** | `DESKTOP-B8TQK49` (IP: `10.11.26.183` / MAC: `d0:57:7b:ce:fc:8b`). |
+| **Compromised User** | `oboomwald` (`nemotodes.health`). |
+| **Operational Impact** | Unauthorized remote interactive control, screen viewing, keystroke logging, and potential lateral movement across the enterprise network. |

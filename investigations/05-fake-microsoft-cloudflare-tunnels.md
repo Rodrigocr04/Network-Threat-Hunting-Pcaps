@@ -138,23 +138,11 @@ samr.samr_UserInfo21.full_name
 ## 5. Threat Behavior & Incident Summary
 
 | Element | Incident Detail |
-| --- | --- |
-| **Initial Infection Vector** | Web browsing to malicious landing domain `hillcoweb[.]com`, triggering stage-1 script delivery.
-
- |
-| **C2 Infrastructure** | Distributed typosquatting domains mimicking Microsoft (`event-time-microsoft[.]org`, `windows-msgas[.]com`) and trycloudflare tunnels.
-
- |
-| **C2 Protocol & Transport** | Persistent cleartext HTTP `POST` requests over TCP port 80 carrying pseudo-random parameters.
-
- |
-| **Evasion Tactics** | Reverse proxying via Cloudflare CDN and masquerading under Microsoft naming conventions.
-
- |
-| **Compromised Host** | `DESKTOP-5AVE44C` (IP: `10.6.13.133` / MAC: `24:77:03:ac:97:df`).
-
- |
-| **Compromised User** | Roman Gaines (`rgaines`).
-
- |
-| **Operational Impact** | Installation of an interactive agent capable of persistent beaconing, remote execution, and telemetry exfiltration.
+| :--- | :--- |
+| **Initial Infection Vector** | Web browsing to malicious landing domain `hillcoweb[.]com`, triggering stage-1 script delivery. |
+| **C2 Infrastructure** | Distributed typosquatting domains mimicking Microsoft (`event-time-microsoft[.]org`, `windows-msgas[.]com`) and trycloudflare tunnels. |
+| **C2 Protocol & Transport** | Persistent cleartext HTTP `POST` requests over TCP port 80 carrying pseudo-random parameters. |
+| **Evasion Tactics** | Reverse proxying via Cloudflare CDN and masquerading under Microsoft naming conventions. |
+| **Compromised Host** | `DESKTOP-5AVE44C` (IP: `10.6.13.133` / MAC: `24:77:03:ac:97:df`). |
+| **Compromised User** | Roman Gaines (`rgaines`). |
+| **Operational Impact** | Installation of an interactive agent capable of persistent beaconing, remote execution, and telemetry exfiltration. |

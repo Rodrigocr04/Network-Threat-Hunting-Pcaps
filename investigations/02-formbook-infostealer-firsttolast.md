@@ -155,23 +155,11 @@ tshark -r /path/to/2026-08-09-traffic-analysis-exercise.pcap \
 ## 5. Threat Behavior & Incident Summary
 
 | Element | Incident Detail |
-| --- | --- |
-| **Malware Family** | **FormBook** (Infostealer / Spyware targeting web credentials, keystrokes, and form data).
-
- |
-| **Activity Pattern** | Periodic HTTP GET beaconing across multiple public IP destinations, utilizing decoy servers to disguise the real C2 node.
-
- |
-| **Traffic Signature** | 4-character directory paths (`/ujvq/`, `/irpw/`, `/lqjm/`, `/rd80/`) coupled with encoded query strings (`?2kn1=...&kbBSJ=...`).
-
- |
-| **Compromised Host** | `DESKTOP-5NLV63K` (IP: `172.16.8.49` / MAC: `00:12:f0:28:d4:34`).
-
- |
-| **Compromised User** | Raymond Vance (`rvance`).
-
- |
-| **Affected Domain** | `FIRSTTOLAST.TECH` (`FIRSTTOLAST`).
-
- |
-| **Impact & Risk** | Complete credential compromise on the host, continuous data harvesting, and covert telemetry exfiltration to threat actor infrastructure.
+| :--- | :--- |
+| **Malware Family** | **FormBook** (Infostealer / Spyware targeting web credentials, keystrokes, and form data). |
+| **Activity Pattern** | Periodic HTTP GET beaconing across multiple public IP destinations, utilizing decoy servers to disguise the real C2 node. |
+| **Traffic Signature** | 4-character directory paths (`/ujvq/`, `/irpw/`, `/lqjm/`, `/rd80/`) coupled with encoded query strings (`?2kn1=...&kbBSJ=...`). |
+| **Compromised Host** | `DESKTOP-5NLV63K` (IP: `172.16.8.49` / MAC: `00:12:f0:28:d4:34`). |
+| **Compromised User** | Raymond Vance (`rvance`). |
+| **Affected Domain** | `FIRSTTOLAST.TECH` (`FIRSTTOLAST`). |
+| **Impact & Risk** | Complete credential compromise on the host, continuous data harvesting, and covert telemetry exfiltration to threat actor infrastructure. |

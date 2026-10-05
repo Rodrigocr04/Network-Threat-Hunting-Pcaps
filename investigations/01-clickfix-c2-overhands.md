@@ -154,20 +154,10 @@ samr.samr_UserInfo21.full_name
 ## 6. Threat Behavior & Incident Summary
 
 | Element | Incident Detail |
-| --- | --- |
-| **Initial Access Vector** | Web social engineering / **ClickFix** lure prompting the victim to copy code into the Windows Run prompt.
-
- |
-| **User Interaction** | Execution of obfuscated PowerShell commands manually triggered by the user.
-
- |
-| **Impacted Host** | `DESKTOP-6T17ZFM` (`10.9.11.135` / `08:d4:0c:7a:29:1e`).
-
- |
-| **Compromised User** | Gabriel McDowell (`gmcdowell`).
-
- |
-| **Domain Scope** | `OVERHANDS.ORG`.
-
- |
-| **Operational Impact** | Arbitrary code execution and establishment of an active C2 communication channel.
+| :--- | :--- |
+| **Initial Access Vector** | Web social engineering / **ClickFix** lure prompting the victim to copy code into the Windows Run prompt. |
+| **User Interaction** | Execution of obfuscated PowerShell commands manually triggered by the user. |
+| **Impacted Host** | `DESKTOP-6T17ZFM` (`10.9.11.135` / `08:d4:0c:7a:29:1e`). |
+| **Compromised User** | Gabriel McDowell (`gmcdowell`). |
+| **Domain Scope** | `OVERHANDS.ORG`. |
+| **Operational Impact** | Arbitrary code execution and establishment of an active C2 communication channel. |

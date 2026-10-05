@@ -5,7 +5,7 @@
 
 A hands-on network forensics and threat hunting repository documenting 8 comprehensive security incident investigations based on full-packet captures (PCAPs) from [Malware-Traffic-Analysis.net](https://www.malware-traffic-analysis.net/).
 
-This project illustrates real-world SOC Level 2 / DFIR playbooks, protocol dissections, triage pipelines, and Active Directory identity mapping under Linux environments.
+This project illustrates real-world SOC / DFIR playbooks, protocol dissections, triage pipelines, and Active Directory identity mapping under Linux environments.
 
 <p align="center">
   <img src="img/wireshark.gif" alt="Wireshark Analysis Preview" width="750">
@@ -42,19 +42,22 @@ When investigating network-level intrusions, standard log analysis often fails t
 
 ```text
 Network-Threat-Hunting-Pcaps/
-├── README.md
+├── LICENSE                                    # MIT License
+├── README.md                                  # Repository overview and summary
 ├── docs/
-│   ├── methodologies-and-cheatsheet.md     # In-depth forensic methodology and query reference
-│   └── tools-setup-and-workflows.md       # Environment setup, Mono workarounds, and tool usage
+│   ├── methodologies-and-cheatsheet.md        # In-depth forensic methodology and query reference
+│   └── tools-setup-and-workflows.md           # Environment setup, Mono workarounds, and tool usage
+├── img/
+│   └── wireshark.gif                          # Traffic analysis preview / demo GIF
 └── investigations/
-    ├── 01-clickfix-c2-overhands.md        # ClickFix social engineering & C2
+    ├── 01-clickfix-c2-overhands.md            # ClickFix social engineering & C2
     ├── 02-formbook-infostealer-firsttolast.md # FormBook decoy check-ins & parameters
-    ├── 03-netsupport-rat-easyas123.md     # NetSupport RAT HTTP beaconing
-    ├── 04-lumma-stealer-win11office.md    # Lumma Stealer API telemetry exfiltration
+    ├── 03-netsupport-rat-easyas123.md         # NetSupport RAT HTTP beaconing
+    ├── 04-lumma-stealer-win11office.md        # Lumma Stealer API telemetry exfiltration
     ├── 05-fake-microsoft-cloudflare-tunnels.md # Typosquatting C2 & Cloudflare tunnels
     ├── 06-malvertising-teamviewer-powershell.md # Fake software download & RAT staging
-    ├── 07-netsupport-zphp-nemotodes.md    # FakeUpdates (ZPHP) & HTTP on port 443
-    └── 08-koi-stealer-bepositive.md       # Win32/Koi Stealer direct-to-IP beaconing
+    ├── 07-netsupport-zphp-nemotodes.md        # FakeUpdates (ZPHP) & HTTP on port 443
+    └── 08-koi-stealer-bepositive.md           # Win32/Koi Stealer direct-to-IP beaconing
 
 ```
 

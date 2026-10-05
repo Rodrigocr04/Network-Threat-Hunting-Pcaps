@@ -175,26 +175,12 @@ tshark -r 2025-01-22-traffic-analysis-exercise.pcap \
 ## 5. Threat Behavior & Incident Summary
 
 | Element | Incident Detail |
-| --- | --- |
-| **Initial Access Vector** | Malvertising / fake search landing page impersonating Google Authenticator.
-
- |
-| **Deceptive Site** | `google-authenticator.burleson-appliance[.]net` (`104.21.64.1`).
-
- |
-| **Secondary Payloads** | Cleartext HTTP retrieval of PowerShell scripts (`pas.ps1`, `29842.ps1`) and TeamViewer files from `5.252.153[.]241`.
-
- |
-| **Persistence & Control** | Execution of PowerShell commands creating startup shortcuts; abuse of TeamViewer for unauthorized remote interactive access.
-
- |
-| **C2 Infrastructure** | `5.252.153[.]241:80`, `45.125.66[.]32:2917`, and `45.125.66[.]252:443`.
-
- |
-| **Compromised Host** | `DESKTOP-L8C5GSJ` (IP: `10.1.17.215` / MAC: `00:00:b7:26:4a:74`).
-
- |
-| **Compromised User** | Steve Hutchenson (Account: `shutchenson`).
-
- |
-| **Operational Impact** | Total endpoint compromise, execution of arbitrary PowerShell code, persistent interactive access, and exposure of internal Active Directory resources.
+| :--- | :--- |
+| **Initial Access Vector** | Malvertising / fake search landing page impersonating Google Authenticator. |
+| **Deceptive Site** | `google-authenticator.burleson-appliance[.]net` (`104.21.64.1`). |
+| **Secondary Payloads** | Cleartext HTTP retrieval of PowerShell scripts (`pas.ps1`, `29842.ps1`) and TeamViewer files from `5.252.153[.]241`. |
+| **Persistence & Control** | Execution of PowerShell commands creating startup shortcuts; abuse of TeamViewer for unauthorized remote interactive access. |
+| **C2 Infrastructure** | `5.252.153[.]241:80`, `45.125.66[.]32:2917`, and `45.125.66[.]252:443`. |
+| **Compromised Host** | `DESKTOP-L8C5GSJ` (IP: `10.1.17.215` / MAC: `00:00:b7:26:4a:74`). |
+| **Compromised User** | Steve Hutchenson (Account: `shutchenson`). |
+| **Operational Impact** | Total endpoint compromise, execution of arbitrary PowerShell code, persistent interactive access, and exposure of internal Active Directory resources. |

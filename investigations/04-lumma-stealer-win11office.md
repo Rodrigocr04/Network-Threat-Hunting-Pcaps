@@ -142,26 +142,12 @@ Extracted user directory attributes using string inspection on Domain Controller
 ## 5. Threat Behavior & Incident Summary
 
 | Element | Incident Detail |
-| --- | --- |
-| **Malware Family** | **Lumma Stealer** (InfoStealer focused on stealing credentials, session tokens, and crypto assets).
-
- |
-| **C2 Infrastructure** | `153.92.1.49` over TCP port 80.
-
- |
-| **Involved Domain** | `whitepepper.su`.
-
- |
-| **Activity Pattern / Beacons** | Emulated browser HTTP requests to `/api/set_agent?...`, POST uploads with `&act=log`, and requests to `/favicon.ico`.
-
- |
-| **Compromised Host** | `DESKTOP-ES9F3ML` (IP: `10.1.21.58` / MAC: `00:21:5d:c8:0e:f2`).
-
- |
-| **Compromised User** | Gabriel Wyatt (Account: `gwyatt`).
-
- |
-| **Affected Domain** | `win11office.com` (`WIN11OFFICE`).
-
- |
-| **Operational Impact** | Covert harvesting and exfiltration of browser data, session cookies, and local credentials, exposing corporate network assets.
+| :--- | :--- |
+| **Malware Family** | **Lumma Stealer** (InfoStealer focused on stealing credentials, session tokens, and crypto assets). |
+| **C2 Infrastructure** | `153.92.1.49` over TCP port 80. |
+| **Involved Domain** | `whitepepper.su`. |
+| **Activity Pattern / Beacons** | Emulated browser HTTP requests to `/api/set_agent?...`, POST uploads with `&act=log`, and requests to `/favicon.ico`. |
+| **Compromised Host** | `DESKTOP-ES9F3ML` (IP: `10.1.21.58` / MAC: `00:21:5d:c8:0e:f2`). |
+| **Compromised User** | Gabriel Wyatt (Account: `gwyatt`). |
+| **Affected Domain** | `win11office.com` (`WIN11OFFICE`). |
+| **Operational Impact** | Covert harvesting and exfiltration of browser data, session cookies, and local credentials, exposing corporate network assets. |
