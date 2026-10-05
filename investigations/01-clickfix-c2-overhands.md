@@ -137,17 +137,11 @@ samr.samr_UserInfo21.full_name
 ## 5. Active Directory Forensic Filter Reference
 
 | Filter / Field | Purpose in this Investigation |
-| --- | --- |
-| `browser.command == 0x0f` | Captures Host Announcement messages from the Windows Browser Service to rapidly locate the Domain Controller.
-
- |
-| `browser.response_computer_name` | Directly pulls the NetBIOS computer name from local network announcement frames.
-
- |
-| `kerberos.cname_string == 1` | Isolates the principal identity in Kerberos ticket requests to retrieve the active domain username.
-
- |
-| `samr.samr_UserInfo21.full_name` | Targets SAM database query responses over SMB/RPC to extract the user's registered full name.
+| :--- | :--- |
+| `browser.command == 0x0f` | Captures Host Announcement messages from the Windows Browser Service to rapidly locate the Domain Controller. |
+| `browser.response_computer_name` | Directly pulls the NetBIOS computer name from local network announcement frames. |
+| `kerberos.cname_string == 1` | Isolates the principal identity in Kerberos ticket requests to retrieve the active domain username. |
+| `samr.samr_UserInfo21.full_name` | Targets SAM database query responses over SMB/RPC to extract the user's registered full name. |
 
 ---
 
